@@ -1,4 +1,4 @@
-baseurl      = "localhost"
+baseurl      = "https://justchillbruh.github.io"
 title        = "Chillbruh's Blog"
 languageCode = "en-us"
 theme        = "hello-friend-ng"
