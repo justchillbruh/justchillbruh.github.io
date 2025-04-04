@@ -1,0 +1,90 @@
+baseurl      = "localhost"
+title        = "Chillbruh's Blog"
+languageCode = "en-us"
+theme        = "hello-friend-ng"
+
+enableRobotsTXT = false
+enableGitInfo = false
+enableEmoji = true
+disableRSS = false
+disableSitemap = false
+disable404 = false
+
+[pagination]
+  disableAliases = false
+  paperSize = 20
+  path = 'page'
+
+[services]
+  [services.rss]
+    limit = 12
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04"
+
+  # Subtitle for home
+  homeSubtitle = "Defend, Learn, Evolve"
+
+  # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  disableReadOtherPosts = false
+
+  # Enable sharing buttons, if you like
+  # Come back later for other platforms later
+  enableSharingButtons = false
+  
+  # Show a global language switcher in the navigation bar
+  enableGlobalLanguageMenu = false
+
+  # Metadata mostly used in document's head
+  description = "This is a blog created by Chillbruh (also known as Jesse)"
+  keywords = "homepage, blog, cybersecurity, sysadmin"
+  images = [""]
+
+  [params.author]
+    name = "chillbruh"
+
+  [params.footer]
+  	trademark = 2025
+  	rss = true
+  	copyright = true
+  	author = true
+
+  [params.logo]
+    logoText = "chillbruh"
+    logoHomeLink = "/"
+
+  # # # # # # # # # # # # # # # # # # # # # # # # # # # # #  
+  # Addon: Startpage portrait 
+  # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+  # Uncomment this if you want a portrait on your start page
+  #
+  # [params.portrait]
+  #   path     = "/img/image.jpg"
+  #   alt      = "Portrait"
+  #   maxWidth = "50px"
+
+[taxonomies]
+    category = "blog"
+    tag      = "tags"
+    series   = "series"
+
+[languages]
+  [languages.en]
+    title = "Chillbruh's Den"
+    keywords = ""
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+    readOtherPosts = "Read other posts"
+
+  # And you can even create generic menu
+  [menu]
+    [[menu.main]]
+      identifier = "about"
+      name = "About"
+      url = "/about"
+    [[menu.main]]
+      identifier = "blog"
+      name       = "Blog"
+      url        = "/posts"
