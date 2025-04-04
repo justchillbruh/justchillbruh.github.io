@@ -19,6 +19,10 @@ disable404 = false
   [services.rss]
     limit = 12
 
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
 [params]
   dateform        = "Jan 2, 2006"
   dateformShort   = "Jan 2"
